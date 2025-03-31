@@ -1,0 +1,150 @@
+Html{
+    font-family: "Boldonse", serif;
+    
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rosybrown;
+}
+
+header{
+    background-color: #e9138c;
+    color: white;
+    padding: 0.5rem;
+   
+}
+header h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav  {
+    background-color: rgb(229, 24, 102);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+nav ul {
+    list-style: none;                      /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;                         /* Alinea los elementos en horizontal */
+    gap: 15px;                             /* Espaciado entre los elementos */
+  }
+
+ 
+  nav ul li a {
+    text-decoration: none;               /* Quita el subrayado */
+    color: aqua;                      /* Color del texto */
+    font-weight: bold;                   /* Opcional: hace el texto más grueso */
+    padding: 10px 15px;                  /* Espaciado dentro de cada enlace */
+  }
+  
+  
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover{
+    color:blue;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+main h1{    
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #e9138c;
+}
+
+main p{
+    text-align: center;
+    font-size: 20px;
+    color: #e9138c;
+}
+
+main img{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #e9138c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+
+}
+
+.gallery-container img{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #e9138c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+
+}
+
+.gallery-container img:hover{
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color: #fff;
+}
+
+footer section{
+    float: right;
+}
+
+footer a{
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: blue;
+}
+
+footer p{
+    margin: 0;
+}
+
+
+

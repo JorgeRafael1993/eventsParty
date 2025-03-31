@@ -1,0 +1,26 @@
+<form id="miFormulario">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="email" id="correo" placeholder="Correo electronico" required>
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+    document.getElementById("miFormulario").addEventListener("submit", function(event){     
+        event.preventDefault();                                                                   // Evita en el envio del formulario por defecto
+        const nombre = document.getElementById("nombre").value;
+        const email = document.getElementById("correo").value;  
+
+        fetch("https://localhost:3306/api/usuarios", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ nombre, email })
+        })
+
+        .then(res => res.json())
+        .then(data => alert("Usuario creado con exito"))
+        .catch(error => console.error("Error:", error));
+    });
+                                                                        
+</script>
